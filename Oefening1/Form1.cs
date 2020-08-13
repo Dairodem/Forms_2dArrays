@@ -25,12 +25,22 @@ namespace Oefening1
         {
             string[,] dataArray = new string[24, 7];
 
+            txtmaandag.Location = new Point(boxWidth + 20, 20);
+            txtdinsdag.Location = new Point(boxWidth*2 + 20, 20);
+            txtwoensdag.Location = new Point(boxWidth*3 + 20, 20);
+            txtdonderdag.Location = new Point(boxWidth*4 + 20, 20);
+            txtvrijdag.Location = new Point(boxWidth*5 + 20, 20);
+            txtzaterdag.Location = new Point(boxWidth*6 + 20, 20);
+            txtzondag.Location = new Point(boxWidth*7 + 20, 20);
+
             // lijst met textboxen om de uren voor te stellen
             for (int i = 0; i < dataArray.GetLength(0); i++)
             {
-                TextBox newTxtBox = new TextBox();
-                newTxtBox.Width = boxWidth;
-                newTxtBox.Height = boxHeight;
+                TextBox newTxtBox = new TextBox
+                {
+                    Width = boxWidth,
+                    Height = boxHeight
+                };
                 newTxtBox.Location = new Point( 10, (newTxtBox.Height * (i + 1)) +margin);
                 Controls.Add(newTxtBox);
                 newTxtBox.TextAlign = HorizontalAlignment.Center;
@@ -44,7 +54,7 @@ namespace Oefening1
             {
                 for (int hour = 0; hour < dataArray.GetLength(0); hour++)
                 {
-                    dataArray[hour, day] = "Rust";
+                    dataArray[hour, day] = "--";
                 }
             }
 
@@ -57,12 +67,28 @@ namespace Oefening1
                     newTxtBox.Width = boxWidth;
                     newTxtBox.Height = boxHeight;
                     newTxtBox.Text = dataArray[hour, day];
-                    newTxtBox.Location = new Point((newTxtBox.Width*(day+1)), (newTxtBox.Height * (hour + 1)) + margin);
+                    newTxtBox.Location = new Point((newTxtBox.Width*(day+1))+20, (newTxtBox.Height * (hour + 1)) + margin);
                     Controls.Add(newTxtBox);
                     newTxtBox.TextAlign = HorizontalAlignment.Center;
                 }
             }
 
+
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdonderdag_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

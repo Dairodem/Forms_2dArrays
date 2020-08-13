@@ -28,105 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtmaandag = new System.Windows.Forms.TextBox();
+            this.txtdinsdag = new System.Windows.Forms.TextBox();
+            this.txtwoensdag = new System.Windows.Forms.TextBox();
+            this.txtdonderdag = new System.Windows.Forms.TextBox();
+            this.txtzaterdag = new System.Windows.Forms.TextBox();
+            this.txtzondag = new System.Windows.Forms.TextBox();
+            this.txtvrijdag = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtmaandag
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(137, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Tag = "";
-            this.textBox1.Text = "maandag";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtmaandag.Enabled = false;
+            this.txtmaandag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmaandag.Location = new System.Drawing.Point(83, 10);
+            this.txtmaandag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmaandag.Name = "txtmaandag";
+            this.txtmaandag.Size = new System.Drawing.Size(80, 20);
+            this.txtmaandag.TabIndex = 0;
+            this.txtmaandag.Tag = "";
+            this.txtmaandag.Text = "maandag";
+            this.txtmaandag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtdinsdag
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(243, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "dinsdag";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdinsdag.Enabled = false;
+            this.txtdinsdag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdinsdag.Location = new System.Drawing.Point(167, 10);
+            this.txtdinsdag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdinsdag.Name = "txtdinsdag";
+            this.txtdinsdag.Size = new System.Drawing.Size(80, 20);
+            this.txtdinsdag.TabIndex = 1;
+            this.txtdinsdag.Text = "dinsdag";
+            this.txtdinsdag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdinsdag.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtwoensdag
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(349, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "woensdag";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtwoensdag.Enabled = false;
+            this.txtwoensdag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwoensdag.Location = new System.Drawing.Point(251, 10);
+            this.txtwoensdag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtwoensdag.Name = "txtwoensdag";
+            this.txtwoensdag.Size = new System.Drawing.Size(80, 20);
+            this.txtwoensdag.TabIndex = 3;
+            this.txtwoensdag.Text = "woensdag";
+            this.txtwoensdag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // txtdonderdag
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(455, 12);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.Text = "donderdag";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdonderdag.Enabled = false;
+            this.txtdonderdag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdonderdag.Location = new System.Drawing.Point(335, 11);
+            this.txtdonderdag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdonderdag.Name = "txtdonderdag";
+            this.txtdonderdag.Size = new System.Drawing.Size(80, 20);
+            this.txtdonderdag.TabIndex = 2;
+            this.txtdonderdag.Text = "donderdag";
+            this.txtdonderdag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdonderdag.TextChanged += new System.EventHandler(this.txtdonderdag_TextChanged);
             // 
-            // textBox5
+            // txtzaterdag
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(667, 12);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.Text = "zaterdag";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtzaterdag.Enabled = false;
+            this.txtzaterdag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtzaterdag.Location = new System.Drawing.Point(505, 11);
+            this.txtzaterdag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtzaterdag.Name = "txtzaterdag";
+            this.txtzaterdag.Size = new System.Drawing.Size(80, 20);
+            this.txtzaterdag.TabIndex = 6;
+            this.txtzaterdag.Text = "zaterdag";
+            this.txtzaterdag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // txtzondag
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(773, 12);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.Text = "zondag";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtzondag.Enabled = false;
+            this.txtzondag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtzondag.Location = new System.Drawing.Point(589, 10);
+            this.txtzondag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtzondag.Name = "txtzondag";
+            this.txtzondag.Size = new System.Drawing.Size(80, 20);
+            this.txtzondag.TabIndex = 5;
+            this.txtzondag.Text = "zondag";
+            this.txtzondag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtzondag.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // textBox7
+            // txtvrijdag
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(561, 12);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 4;
-            this.textBox7.Text = "vrijdag";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtvrijdag.Enabled = false;
+            this.txtvrijdag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtvrijdag.Location = new System.Drawing.Point(421, 10);
+            this.txtvrijdag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtvrijdag.Name = "txtvrijdag";
+            this.txtvrijdag.Size = new System.Drawing.Size(80, 20);
+            this.txtvrijdag.TabIndex = 4;
+            this.txtvrijdag.Text = "vrijdag";
+            this.txtvrijdag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 655);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(692, 532);
+            this.Controls.Add(this.txtzaterdag);
+            this.Controls.Add(this.txtzondag);
+            this.Controls.Add(this.txtvrijdag);
+            this.Controls.Add(this.txtwoensdag);
+            this.Controls.Add(this.txtdonderdag);
+            this.Controls.Add(this.txtdinsdag);
+            this.Controls.Add(this.txtmaandag);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -137,13 +148,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtmaandag;
+        private System.Windows.Forms.TextBox txtdinsdag;
+        private System.Windows.Forms.TextBox txtwoensdag;
+        private System.Windows.Forms.TextBox txtdonderdag;
+        private System.Windows.Forms.TextBox txtzaterdag;
+        private System.Windows.Forms.TextBox txtzondag;
+        private System.Windows.Forms.TextBox txtvrijdag;
     }
 }
 
